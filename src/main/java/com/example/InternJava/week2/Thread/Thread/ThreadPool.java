@@ -1,29 +1,25 @@
-package com.example.InternJava.week2.ThreadNew.Thread;
+package com.example.InternJava.week2.Thread.Thread;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class ThreadPool {
     public static void main(String[] args) {
-        // Tạo một Thread Pool với kích thước là 3
-        ExecutorService threadPool = Executors.newFixedThreadPool(3);
+        ExecutorService threadPool = Executors.newFixedThreadPool(5);
 
-        // Gửi các tác vụ (Runnable) đến Thread Pool để xử lý
-        for (int i = 1; i <= 5; i++) {
-            int taskNumber = i;
+        for (int i = 1; i <= 10; i++) {
+            String name = "My name is Lam ,";
             threadPool.execute(() -> {
-                System.out.println("Task " + taskNumber + " processed by " + Thread.currentThread().getName());
-                // Simulate some task execution time
+                System.out.println(name + " processed by " + Thread.currentThread().getName());
                 try {
-                    Thread.sleep(2000);
+                    Thread.sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                System.out.println("Task " + taskNumber + " completed by " + Thread.currentThread().getName());
+                System.out.println(name + " completed by " + Thread.currentThread().getName());
             });
         }
 
-        // Đóng Thread Pool sau khi hoàn thành các tác vụ
         threadPool.shutdown();
     }
 }
