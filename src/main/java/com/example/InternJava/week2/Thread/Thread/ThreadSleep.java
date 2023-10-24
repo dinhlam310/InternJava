@@ -1,4 +1,4 @@
-package com.example.InternJava.week2.Thread;
+package com.example.InternJava.week2.ThreadNew.Thread;
 
 public class ThreadSleep extends Thread{
     public void run(){

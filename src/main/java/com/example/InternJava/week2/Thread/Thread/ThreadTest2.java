@@ -1,4 +1,4 @@
-package com.example.InternJava.week2.Thread;
+package com.example.InternJava.week2.ThreadNew.Thread;
 
 public class ThreadTest2 implements Runnable{
     public void run(){

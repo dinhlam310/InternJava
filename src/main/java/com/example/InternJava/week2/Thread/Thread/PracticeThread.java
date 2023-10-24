@@ -1,4 +1,4 @@
-package com.example.InternJava.week2.Thread;
+package com.example.InternJava.week2.ThreadNew.Thread;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

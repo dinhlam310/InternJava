@@ -1,4 +1,4 @@
-package com.example.InternJava.week2.Thread;
+package com.example.InternJava.week2.ThreadNew.Thread;
 
 public class ThreadTest1 extends Thread{
     public void run(){
