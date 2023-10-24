@@ -85,4 +85,24 @@ public class HaNoiTower {
         rowNumberCount++;
     }
 
+//    public static void addStepToExcelForCount(int step) {
+//        if (rowNumberCount <= 9) {
+//            Row row = sheet.getRow(rowNumberCount);
+//            if (row == null) {
+//                row = sheet.createRow(rowNumberCount);
+//            }
+//            Cell cell = row.createCell(0);
+//            cell.setCellValue(step);
+//            rowNumberCount++;
+//        } else {
+//            Row row = sheet.getRow(rowNumberCount - 7);
+//            if (row == null) {
+//                row = sheet.createRow(rowNumberCount - 7);
+//            }
+//            Cell cell = row.createCell(0);
+//            cell.setCellValue(step);
+//            rowNumberCount++;
+//        }
+
+
 }
